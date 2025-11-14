@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog FOMINHA - Bolo de Chocolate</title>
+    <link rel="stylesheet" href="style_receitas.css">
+</head>
+<body>
+    <header>
+        <h1>FOMINHA</h1>
+        <p>A melhor receita de Bolo de Chocolate!</p>
+    </header>
+    <main>
+        <img src="https://i.pinimg.com/1200x/27/ab/e9/27abe964b8333e09ce21befd20885f7b.jpg" alt="minhaimagem1">
+        <article class="receita">
+            <h1>Ingredientes</h1>
+            <h2>• 1 xícara de chá de farinha de trigo</h2>
+            <h2>• 100g de manteiga</h2>
+            <h2>• 2 colheres de sopa de açúcar (para a massa)</h2>
+            <h2>• 3 ovos</h2>
+
+            <h1>Para recheio</h1>
+            <h2>• 1 ovo</h2>
+            <h2>• 500g de manteiga derretida</h2>
+            <h2>• 1 colher de sopa de noz-moscada</h2>
+            <h2>•  50g de manteiga derretida</h2>
+            <h2>• 1 colher de sopa de canela</h2>
+            <h2>• 1 pitada de sal </h2>
+
+            <h1>Modo de preparo:</h1>
+            <ol>
+                <li>Corte a abóbora e cozinhe até elas ficarem macias. Escorra a água e bata no liquidificador ou processador de alimentos até formar um purê liso. Você também pode realizar esse processo manualmente com o auxílio de um garfo, só é um pouco mais demorado. Reserve. </li>
+                <li>Numa tigela, misture a farinha com o açúcar. Acrescente a manteiga e misture até formar uma farofa grossa. </li>
+                <li>Acrescente os ovos na mistura e mexa até começar a formar uma massa lisa e cremosa. Nessa hora, o ideal é trabalhar com as mãos para a massa ficar com bastante liga.</li>
+                <li>Depois, modele a massa em uma bola e coloque na geladeira embrulhada em plástico-filme por uns 15 minutos até firmar.</li>
+                <li>Enquanto isso, misture a abóbora com a canela e noz-moscada. Acrescente 1 ovo e 1 colher de açúcar e misture com uma espátula. Por fim, acrescente 1 pitada de sal e 50g de manteiga derretida. Misture tudo bem.</li>
+                <li>Retire a massa da geladeira e abra com um rolo. Como a massa doce tende a ser mais quebradiça, ela pode rachar no começo, mas é só remendar com as próprias mãos. </li>
+                <li>Modele a massa em uma forma com fundo removível. Com a ponta dos dedos, preencha as laterais da forma e retire os excessos.</li>
+                <li>Leve a forma com a massa para a geladeira e deixe por uns 20 minutos até firmar.</li>
+                <li>Quando a massa estiver firme, espalhe a mistura de abóbora por cima.</li>
+                <li>Asse por cerca de 40 minutos no forno preaquecido a 180°C. Quando a massa estiver firme e o centro brilhoso e cremoso, pode retirar a torta do forno.</li>
+                <li>Espere esfriar para remover a torta da forma. Por fim, polvilhe um pouco de canela e, se quiser, também pode decorar com um pouco de chantilly ou merengue.</li>
+            </ol>
+
+            <button onclick="mostrarDica('fermento')">Dica Secreta do Fermento</button>
+            <p id="dica_do_dia" class="dica">Clique no botão acima para uma dica de chef!</p>
+            <ul>
+                <li>Tempere com equilíbrio: A abóbora tem um sabor adocicado natural. Para tortas doces, use uma mistura de especiarias como canela, cravo, noz-moscada e gengibre em pó para realçar o sabor, ajustando as quantidades ao seu gosto. Para tortas salgadas, refogue a abóbora com alho, cebola e pimenta, adicionando sal e ervas a gosto.</li>
+            </ul>
+            <section class="avaliacao">
+                <h3>Avalie esta Receita</h3>
+                <label for="nota">Sua Nota (1 a 5):</label>
+                <input type="number" id="nota_receita" min="1" max="5" value="5">
+                <button onclick="enviarAvaliacao()">Enviar Avaliação</button>
+                <p id="media_avaliacao">Média Atual: 4.5 (Baseado em 100 votos)</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2025 Blog Receita Certa</p>
+    </footer>
+    <script src="script_receitas.js"></script>
+</body>
+
+<style>
+    body {
+    font-family: 'Georgia', serif;
+    background-color: #fcf9f2;
+    color: #5d4037;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+}
+
+header {
+    background-color: #795548;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.receita {
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.dica {
+    background-color: #fff8e1;
+    border-left: 5px solid #ffb300;
+    padding: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    color: #6d4c41;
+}
+
+.avaliacao {
+    margin-top: 30px;
+    border-top: 1px dashed #ccc;
+    padding-top: 20px;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60px;
+}
+</style>
+</html>
+
